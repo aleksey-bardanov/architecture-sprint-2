@@ -19,7 +19,7 @@ docker compose up -d
 Посмотреть количество документов в БД вообще и по шардам отдельно:
 
 ```shell
-./scripts/helloDoc-countDocuments.sh
+./scripts/count-docs.sh
 ```
 
 ### Если вы запускаете проект на локальной машине
