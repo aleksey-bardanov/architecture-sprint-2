@@ -1,0 +1,277 @@
+<mxfile host="65bd71144e">
+    <diagram id="tSPu-xEiTHlKvLM586Qi" name="3.Кэширование">
+        <mxGraphModel dx="946" dy="564" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+            </root>
+        </mxGraphModel>
+    </diagram>
+    <diagram id="a-teNu4Ie0O3ipvXSz5f" name="2.Репликация">
+        <mxGraphModel dx="946" dy="564" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="fJ-IywU_GcKG5cgodyRy-3" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="fJ-IywU_GcKG5cgodyRy-4" target="fJ-IywU_GcKG5cgodyRy-12">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="fJ-IywU_GcKG5cgodyRy-4" value="Сервис&lt;br&gt;&lt;b&gt;pymongo-api&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="270" y="50" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="fJ-IywU_GcKG5cgodyRy-9" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=none;startFill=0;" edge="1" parent="1" source="fJ-IywU_GcKG5cgodyRy-12" target="fJ-IywU_GcKG5cgodyRy-15">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="fJ-IywU_GcKG5cgodyRy-10" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;startArrow=classic;startFill=1;" edge="1" parent="1" source="fJ-IywU_GcKG5cgodyRy-12" target="zca--lgVKISyBSfwqqIb-2">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="140" y="280" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="330" y="250"/>
+                            <mxPoint x="175" y="250"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="fJ-IywU_GcKG5cgodyRy-11" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;startArrow=classic;startFill=1;" edge="1" parent="1" source="fJ-IywU_GcKG5cgodyRy-12" target="zca--lgVKISyBSfwqqIb-14">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="260" y="280" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="330" y="250"/>
+                            <mxPoint x="495" y="250"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="fJ-IywU_GcKG5cgodyRy-12" value="Маршрутизатор&lt;br&gt;&lt;b&gt;mongos-router&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="270" y="160" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="fJ-IywU_GcKG5cgodyRy-15" value="&amp;nbsp;Конфигурационный сервер&lt;br&gt;&lt;b&gt;configSrv&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="640" y="160" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="zca--lgVKISyBSfwqqIb-12" value="" style="group" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="40" y="320" width="270" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="zca--lgVKISyBSfwqqIb-2" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="zca--lgVKISyBSfwqqIb-12">
+                    <mxGeometry width="270" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="zca--lgVKISyBSfwqqIb-1" value="Primary" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="zca--lgVKISyBSfwqqIb-12">
+                    <mxGeometry x="105" y="20" width="60" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="zca--lgVKISyBSfwqqIb-3" value="&lt;span style=&quot;border-color: var(--border-color); color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(251, 251, 251); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;MongoDB&lt;br&gt;&lt;/span&gt;Replicaset&lt;br&gt;&lt;b&gt;shard1&lt;/b&gt;&lt;/span&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="zca--lgVKISyBSfwqqIb-12">
+                    <mxGeometry x="15" y="10" width="70" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="zca--lgVKISyBSfwqqIb-10" style="edgeStyle=none;html=1;exitX=1;exitY=0;exitDx=0;exitDy=22.5;exitPerimeter=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=classic;startFill=1;" edge="1" parent="zca--lgVKISyBSfwqqIb-12" source="zca--lgVKISyBSfwqqIb-4" target="zca--lgVKISyBSfwqqIb-1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="135" y="123"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="zca--lgVKISyBSfwqqIb-4" value="Secondary1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="zca--lgVKISyBSfwqqIb-12">
+                    <mxGeometry x="15" y="100" width="80" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="zca--lgVKISyBSfwqqIb-7" style="edgeStyle=none;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=none;startFill=0;" edge="1" parent="zca--lgVKISyBSfwqqIb-12" source="zca--lgVKISyBSfwqqIb-1" target="zca--lgVKISyBSfwqqIb-4">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="55" y="50"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="zca--lgVKISyBSfwqqIb-11" style="edgeStyle=none;html=1;exitX=0;exitY=0;exitDx=0;exitDy=22.5;exitPerimeter=0;startArrow=classic;startFill=1;" edge="1" parent="zca--lgVKISyBSfwqqIb-12" source="zca--lgVKISyBSfwqqIb-5" target="zca--lgVKISyBSfwqqIb-1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="135" y="123"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="zca--lgVKISyBSfwqqIb-5" value="Secondary1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="zca--lgVKISyBSfwqqIb-12">
+                    <mxGeometry x="180" y="100" width="80" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="zca--lgVKISyBSfwqqIb-8" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=none;startFill=0;" edge="1" parent="zca--lgVKISyBSfwqqIb-12" source="zca--lgVKISyBSfwqqIb-1" target="zca--lgVKISyBSfwqqIb-5">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="220" y="50"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="zca--lgVKISyBSfwqqIb-9" style="edgeStyle=none;html=1;exitX=1;exitY=0;exitDx=0;exitDy=37.5;exitPerimeter=0;entryX=0;entryY=0;entryDx=0;entryDy=37.5;entryPerimeter=0;startArrow=classic;startFill=1;" edge="1" parent="zca--lgVKISyBSfwqqIb-12" source="zca--lgVKISyBSfwqqIb-4" target="zca--lgVKISyBSfwqqIb-5">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="zca--lgVKISyBSfwqqIb-13" value="" style="group" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="360" y="320" width="270" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="zca--lgVKISyBSfwqqIb-14" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="zca--lgVKISyBSfwqqIb-13">
+                    <mxGeometry width="270" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="zca--lgVKISyBSfwqqIb-15" value="Primary" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="zca--lgVKISyBSfwqqIb-13">
+                    <mxGeometry x="105" y="20" width="60" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="zca--lgVKISyBSfwqqIb-16" value="&lt;b style=&quot;border-color: var(--border-color); color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(251, 251, 251); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;MongoDB Replicaset&lt;/span&gt;&lt;br&gt;shard2&lt;br&gt;&lt;/b&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="zca--lgVKISyBSfwqqIb-13">
+                    <mxGeometry x="15" y="10" width="70" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="zca--lgVKISyBSfwqqIb-17" style="edgeStyle=none;html=1;exitX=1;exitY=0;exitDx=0;exitDy=22.5;exitPerimeter=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=classic;startFill=1;" edge="1" parent="zca--lgVKISyBSfwqqIb-13" source="zca--lgVKISyBSfwqqIb-18" target="zca--lgVKISyBSfwqqIb-15">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="135" y="123"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="zca--lgVKISyBSfwqqIb-18" value="Secondary1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="zca--lgVKISyBSfwqqIb-13">
+                    <mxGeometry x="15" y="100" width="80" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="zca--lgVKISyBSfwqqIb-19" style="edgeStyle=none;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=none;startFill=0;" edge="1" parent="zca--lgVKISyBSfwqqIb-13" source="zca--lgVKISyBSfwqqIb-15" target="zca--lgVKISyBSfwqqIb-18">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="55" y="50"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="zca--lgVKISyBSfwqqIb-20" style="edgeStyle=none;html=1;exitX=0;exitY=0;exitDx=0;exitDy=22.5;exitPerimeter=0;startArrow=classic;startFill=1;" edge="1" parent="zca--lgVKISyBSfwqqIb-13" source="zca--lgVKISyBSfwqqIb-21" target="zca--lgVKISyBSfwqqIb-15">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="135" y="123"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="zca--lgVKISyBSfwqqIb-21" value="Secondary1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="zca--lgVKISyBSfwqqIb-13">
+                    <mxGeometry x="180" y="100" width="80" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="zca--lgVKISyBSfwqqIb-22" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=none;startFill=0;" edge="1" parent="zca--lgVKISyBSfwqqIb-13" source="zca--lgVKISyBSfwqqIb-15" target="zca--lgVKISyBSfwqqIb-21">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="220" y="50"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="zca--lgVKISyBSfwqqIb-23" style="edgeStyle=none;html=1;exitX=1;exitY=0;exitDx=0;exitDy=37.5;exitPerimeter=0;entryX=0;entryY=0;entryDx=0;entryDy=37.5;entryPerimeter=0;startArrow=classic;startFill=1;" edge="1" parent="zca--lgVKISyBSfwqqIb-13" source="zca--lgVKISyBSfwqqIb-18" target="zca--lgVKISyBSfwqqIb-21">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="zca--lgVKISyBSfwqqIb-24" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;startArrow=none;startFill=0;" edge="1" parent="1" source="zca--lgVKISyBSfwqqIb-14" target="fJ-IywU_GcKG5cgodyRy-15">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="495" y="570"/>
+                            <mxPoint x="700" y="570"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="zca--lgVKISyBSfwqqIb-25" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;startArrow=none;startFill=0;" edge="1" parent="1" source="zca--lgVKISyBSfwqqIb-2" target="fJ-IywU_GcKG5cgodyRy-15">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="175" y="570"/>
+                            <mxPoint x="700" y="570"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+    <diagram id="uT_g_0gAPhshEJ5suzoV" name="1.Шардирование">
+        <mxGraphModel dx="946" dy="564" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="i-nb3mkXNd6mcOtGCdHM-2" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="n-oE6gDNDZGF3l80dd5b-1" target="uKa0ISoNaHvrHb7XeyYz-8">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="240" y="440"/>
+                            <mxPoint x="500" y="440"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="n-oE6gDNDZGF3l80dd5b-1" value="MongoDB&lt;br&gt;&lt;b&gt;shard1&lt;/b&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" parent="1" vertex="1">
+                    <mxGeometry x="210" y="310" width="60" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="uKa0ISoNaHvrHb7XeyYz-9" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="n-oE6gDNDZGF3l80dd5b-2" target="uKa0ISoNaHvrHb7XeyYz-6" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="n-oE6gDNDZGF3l80dd5b-2" value="Сервис&lt;br&gt;&lt;b&gt;pymongo-api&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="240" y="70" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="uKa0ISoNaHvrHb7XeyYz-10" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=none;startFill=0;" parent="1" source="uKa0ISoNaHvrHb7XeyYz-6" target="uKa0ISoNaHvrHb7XeyYz-8" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="uKa0ISoNaHvrHb7XeyYz-11" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=classic;startFill=1;" parent="1" source="uKa0ISoNaHvrHb7XeyYz-6" target="n-oE6gDNDZGF3l80dd5b-1" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="uKa0ISoNaHvrHb7XeyYz-12" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=classic;startFill=1;" parent="1" source="uKa0ISoNaHvrHb7XeyYz-6" target="uKa0ISoNaHvrHb7XeyYz-7" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="uKa0ISoNaHvrHb7XeyYz-6" value="Маршрутизатор&lt;br&gt;&lt;b&gt;mongos-router&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="240" y="190" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="i-nb3mkXNd6mcOtGCdHM-1" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="uKa0ISoNaHvrHb7XeyYz-7" target="uKa0ISoNaHvrHb7XeyYz-8">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="360" y="440"/>
+                            <mxPoint x="500" y="440"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="uKa0ISoNaHvrHb7XeyYz-7" value="MongoDB&lt;br&gt;&lt;b style=&quot;border-color: var(--border-color);&quot;&gt;shard2&lt;/b&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" parent="1" vertex="1">
+                    <mxGeometry x="330" y="310" width="60" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="uKa0ISoNaHvrHb7XeyYz-8" value="&amp;nbsp;Конфигурационный сервер&lt;br&gt;&lt;b&gt;configSrv&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="440" y="190" width="120" height="60" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+    <diagram name="0.Исходное приложение" id="-H_mtQnk-PTXWXPvYvuk">
+        <mxGraphModel dx="946" dy="564" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="zA23MoTUsTF4_91t8viU-2" value="MongoDB" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" parent="1" vertex="1">
+                    <mxGeometry x="560" y="280" width="60" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="zA23MoTUsTF4_91t8viU-3" value="pymongo-api" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="360" y="290" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="zA23MoTUsTF4_91t8viU-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="zA23MoTUsTF4_91t8viU-3" target="zA23MoTUsTF4_91t8viU-2" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+    <diagram id="PWQhqHdmE67wH9cfDO66" name="Логика решения">
+        <mxGraphModel dx="946" dy="564" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="64NlS7pWyE9_fsjUXc7J-1" value="&lt;div style=&quot;&quot;&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="60" y="120" width="20" height="10" as="geometry"/>
+                </mxCell>
+                <mxCell id="64NlS7pWyE9_fsjUXc7J-7" value="" style="edgeStyle=none;html=1;startArrow=none;startFill=0;" edge="1" parent="1" source="64NlS7pWyE9_fsjUXc7J-3" target="64NlS7pWyE9_fsjUXc7J-6">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="64NlS7pWyE9_fsjUXc7J-3" value="&lt;div style=&quot;border-color: var(--border-color); text-align: left;&quot;&gt;&lt;span style=&quot;border-color: var(--border-color); background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color); text-align: left;&quot;&gt;&lt;b&gt;0. Постановка задачи&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color); text-align: left;&quot;&gt;&lt;span style=&quot;border-color: var(--border-color); background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color); text-align: left;&quot;&gt;&lt;span style=&quot;border-color: var(--border-color); background-color: initial;&quot;&gt;Во время распродажи (период повышенной нагрузки) сервис&amp;nbsp;&lt;/span&gt;&lt;b style=&quot;border-color: var(--border-color); background-color: initial;&quot;&gt;pymongo-api&lt;/b&gt;&lt;span style=&quot;border-color: var(--border-color); background-color: initial;&quot;&gt;&amp;nbsp;замедлил работу магазина.&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;border-color: var(--border-color); background-color: initial;&quot;&gt;Сервис работает с базой данных&amp;nbsp;&lt;/span&gt;&lt;b style=&quot;border-color: var(--border-color); background-color: initial;&quot;&gt;MongoDB&lt;/b&gt;&lt;span style=&quot;border-color: var(--border-color); background-color: initial;&quot;&gt;, содержащей информацию о пользователях - покупателях онлайн магазина.&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color); text-align: left;&quot;&gt;&lt;span style=&quot;border-color: var(--border-color); background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color); text-align: left;&quot;&gt;&lt;span style=&quot;border-color: var(--border-color); background-color: initial;&quot;&gt;Стоит &lt;b&gt;задача&lt;/b&gt;: повысить окзоустойсивость и пропускную способность приложения, для того чтобы при проведении следующих распродаж магазин не потерял продажи.&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color); text-align: left;&quot;&gt;&lt;span style=&quot;border-color: var(--border-color); background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color); text-align: left;&quot;&gt;&lt;span style=&quot;border-color: var(--border-color); background-color: initial;&quot;&gt;Профиль нагрузки магазина: динамический, нерегулярный, предсказуемый (мы знаем, когда будут распродажи).&amp;nbsp;&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+                    <mxGeometry x="20" y="10" width="390" height="220" as="geometry"/>
+                </mxCell>
+                <mxCell id="64NlS7pWyE9_fsjUXc7J-14" value="" style="edgeStyle=none;html=1;startArrow=none;startFill=0;" edge="1" parent="1" source="64NlS7pWyE9_fsjUXc7J-4" target="64NlS7pWyE9_fsjUXc7J-13">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="64NlS7pWyE9_fsjUXc7J-4" value="&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;b style=&quot;background-color: initial;&quot;&gt;3. Как реализовать шардирование?&lt;/b&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;Используемая в проекте база данных -&amp;nbsp; MongoDB поддерживает две стратегии распределения данных по шардам: распределение по диапазоннам и распределение с помощью хэширования.&amp;nbsp;&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;Для запуска шардированного варианта БД потребуются роутер и сервис конфигурации.&lt;/div&gt;" style="whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;align=left;" vertex="1" parent="1">
+                    <mxGeometry x="20" y="540" width="390" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="64NlS7pWyE9_fsjUXc7J-5" value="&lt;b&gt;5. Как реализовать репликацию?&lt;br&gt;&lt;/b&gt;&lt;br&gt;&lt;b&gt;MongoDB&lt;/b&gt; поддерживает репликацию на уровне базы данных. Конфигурация &lt;b&gt;Replicaset &lt;/b&gt;поддерживает запись и чтение с основного узла и чтение с реплик. При сбое основного узла группа БД запустит кворум, чтобы выбрать новый главный узел из реплик." style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;align=left;" vertex="1" parent="1">
+                    <mxGeometry x="20" y="830" width="390" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="64NlS7pWyE9_fsjUXc7J-11" value="" style="edgeStyle=none;html=1;startArrow=none;startFill=0;" edge="1" parent="1" source="64NlS7pWyE9_fsjUXc7J-6" target="64NlS7pWyE9_fsjUXc7J-10">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="64NlS7pWyE9_fsjUXc7J-6" value="&lt;b&gt;1. Предлагаемое решение&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;span style=&quot;border-color: var(--border-color); background-color: initial;&quot;&gt;Сейчас под большой нагрузкой очереди обработки заказов переполнились и часть заказов была потеряна. Так как запросы к БД простые: требуется предоставлять информацию об отдельных ползователях, то увеличить пропускную способность приложения можно путем репликации и шардирования единой базы данных.&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;align=left;" vertex="1" parent="1">
+                    <mxGeometry x="20" y="260" width="390" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="64NlS7pWyE9_fsjUXc7J-12" value="" style="edgeStyle=none;html=1;startArrow=none;startFill=0;" edge="1" parent="1" source="64NlS7pWyE9_fsjUXc7J-10" target="64NlS7pWyE9_fsjUXc7J-4">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="64NlS7pWyE9_fsjUXc7J-10" value="&lt;b&gt;2. Зачем проекту шардирование?&lt;/b&gt;&lt;br&gt;&lt;br&gt;Разбиение одной большой БД на несколько маленьких повысит скорость выполнения запросов к БД, а значит и пропускную способность всей системы" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;align=left;" vertex="1" parent="1">
+                    <mxGeometry x="20" y="430" width="390" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="64NlS7pWyE9_fsjUXc7J-15" value="" style="edgeStyle=none;html=1;startArrow=none;startFill=0;" edge="1" parent="1" source="64NlS7pWyE9_fsjUXc7J-13" target="64NlS7pWyE9_fsjUXc7J-5">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="64NlS7pWyE9_fsjUXc7J-13" value="&lt;b&gt;4. Зачем проекту репликация?&lt;br&gt;&lt;/b&gt;&lt;br&gt;Использование паттерна&amp;nbsp;&lt;b&gt;read-replica&lt;/b&gt;&amp;nbsp;позволит повысить как пропускную способность, за счет перенаправления запросов на чтение в копии основной БД, так и отказоустойчивость приложения,&amp;nbsp; за счет возможности переключения трафика с &quot;упавшего&quot; инстанса на рабочий." style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;align=left;" vertex="1" parent="1">
+                    <mxGeometry x="20" y="690" width="390" height="110" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
